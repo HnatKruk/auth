@@ -3,8 +3,8 @@ import { Context } from '..'
 import { observer } from 'mobx-react-lite'
 
 export const LoginFrom: FC = observer(() => {
-  const [email, setEmail] = useState<string>('hnatkivtaras@gmail.com')
-  const [password, setPassword] = useState<string>('1234')
+  const [email, setEmail] = useState<string>('')
+  const [password, setPassword] = useState<string>('')
   const { store } = useContext(Context)
 
   return (
