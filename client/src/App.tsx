@@ -35,7 +35,7 @@ export const App = observer(() => {
         <LoginFrom />
         <div>
         <button onClick={() => getUsers()}>Get Users</button>
-        {users.map((user, index) => <div key={index}>{user.email}</div>)}
+        {store.isAuth && users.map((user, index) => <div key={index}>{user.email}</div>)}
       </div>
       </div>
     )
