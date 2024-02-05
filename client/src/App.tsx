@@ -34,7 +34,7 @@ export const App = observer(() => {
       <div>
         <LoginFrom />
         <div>
-        <button onClick={() => getUsers()}>Get Users</button>
+        <button onClick={() => getUsers()}>Get Users</button> *allowed only for authorize users
         {store.isAuth && users.map((user, index) => <div key={index}>{user.email}</div>)}
       </div>
       </div>
